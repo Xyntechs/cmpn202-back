@@ -1,41 +1,12 @@
 /**
- * View Engine Configuration
- * (sails.config.views)
+ * Views Configuration
+ * (app.config.views)
  *
- * Server-sent views are a classic and effective way to get your app up
- * and running. Views are normally served from controllers.  Below, you can
- * configure your templating language/framework of choice and configure
- * Sails' layout support.
- *
- * For details on available options for configuring server-side views, check out:
- * https://sailsjs.com/config/views
- *
- * For more background information on views and partials in Sails, check out:
- * https://sailsjs.com/docs/concepts/views
+ * @see http://trailsjs.io/doc/config/views.js
  */
 
-module.exports.views = {
+'use strict'
 
-  /***************************************************************************
-  *                                                                          *
-  * Extension to use for your views. When calling `res.view()` in an action, *
-  * you can leave this extension off. For example, calling                   *
-  * `res.view('homepage')` will (using default settings) look for a          *
-  * `views/homepage.ejs` file.                                               *
-  *                                                                          *
-  ***************************************************************************/
+module.exports = {
 
-  // extension: 'ejs',
-
-  /***************************************************************************
-  *                                                                          *
-  * The path (relative to the views directory, and without extension) to the *
-  * default layout file to use, or `false` to disable layouts entirely.      *
-  *                                                                          *
-  * Note that layouts only work with the built-in view engine!               *
-  *                                                                          *
-  ***************************************************************************/
-
-  // layout: 'layout'
-
-};
+}
