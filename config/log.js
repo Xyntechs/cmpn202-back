@@ -5,9 +5,12 @@
  * @see http://trailsjs.io/doc/config/log
  */
 
-const winston = require('winston');
+'use strict'
+
+const winston = require('winston')
 
 module.exports = {
+
   /**
    * Specify the logger to use.
    * @see https://github.com/winstonjs/winston#instantiating-your-own-logger
@@ -18,10 +21,11 @@ module.exports = {
     level: 'info',
     exitOnError: false,
     transports: [
-      new winston.transports.Console({
+      new (winston.transports.Console)({
         prettyPrint: true,
-        colorize: true,
-      }),
-    ],
-  }),
-};
+        colorize: true
+      })
+    ]
+  })
+
+}

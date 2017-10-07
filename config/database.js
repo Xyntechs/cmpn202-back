@@ -7,9 +7,10 @@
  * @see {@link http://trailsjs.io/doc/config/database}
  */
 
-const mysql = require('mysql');
+'use strict'
 
 module.exports = {
+
   /**
    * Define the database stores. A store is typically a single database.
    *
@@ -18,6 +19,7 @@ module.exports = {
    * Set production connection info in config/env/production.js
    */
   stores: {
+
     /**
      * Define a store called "local" which uses SQLite3 to persist data.
      *
@@ -25,14 +27,22 @@ module.exports = {
      * run "npm install --save waterline-sqlite3"
      */
 
-    dev: {
-      adapter: mysql,
-      migrate: 'alter',
-    },
+
+    //  dev: {
+    //   adapter: require('waterline-mysql'),
+    //   client: 'mysql'
+    //   connection: {
+    //     host     : 'mysql5.gear.host',
+    //     user     : 'cmpn202',
+    //     password : 'Gs3r7l9~_Dx5',
+    //     database : 'cmpn202'
+    //   }
+    // }
+
   },
 
   models: {
     defaultStore: 'dev',
-    migrate: 'alter',
-  },
-};
+    migrate: 'alter'
+  }
+}

@@ -78,7 +78,7 @@ module.exports = {
   /**
    * The host to bind the web server to
    */
-  host: process.env.HOST || '0.0.0.0'
+  host: process.env.HOST || '127.0.0.1'
 
   /**
    * Alternate method to add multiple template engine, for single view template use config.views.engine

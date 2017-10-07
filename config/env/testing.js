@@ -1,5 +1,10 @@
+'use strict'
+
 module.exports = {
+
   trailpack: {
-    disabled: ['repl'],
-  },
-};
+    disabled: [
+      'repl'
+    ]
+  }
+}

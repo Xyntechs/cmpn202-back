@@ -1,45 +1,45 @@
 {
-  "name": "cmpn-202-back",
-  "version": "0.0.1",
-  "description": "The Backend of CMPN202 project",
-  "homepage": "http://trailsjs.io",
+  "name": "cmpn-202",
+  "version": "0.0.0",
+  "description": "asd",
+  "homepage": "asd",
   "author": {
-    "name": "ahmedHusseinF",
+    "name": "Ahmed Hussein",
     "email": "hussein.ahmed50@gmail.com",
     "url": "github.com/ahmedHusseinF"
   },
   "main": "index.js",
-  "keywords": ["trails", "mysql", "database", "cmpn202", "trailsjs"],
+  "keywords": [
+    "express",
+    "trails",
+    "trailsjs"
+  ],
   "dependencies": {
     "express": "^4.16.1",
     "mysql": "^2.15.0",
-    "pm2": "^2.7.1",
-    "trailpack-express": "^2.0.4",
+    "trailpack-express": "^2.0.3",
     "trailpack-repl": "v2-latest",
     "trailpack-router": "v2-latest",
+    "trailpack-waterline": "^2.0.0-rc2",
     "trails": "v2-latest",
+    "waterline-mysql": "^0.6.0",
     "winston": "^2.3"
   },
   "devDependencies": {
-    "eslint": "^4.8.0",
-    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint": "^2.11",
     "eslint-config-trails": "^2",
-    "eslint-plugin-import": "^2.7.0",
     "mocha": "^2.5",
-    "nodemon": "^1.12.1",
     "supertest": "^1.2"
   },
   "scripts": {
-    "preinstall": "npm install pm2 -g",
-    "start": "nodemon server.js",
     "test": "eslint . && mocha"
   },
   "engines": {
-    "node": ">= 6.11.4"
+    "node": ">= 4.0.0"
   },
   "eslintConfig": {
     "extends": "trails"
   },
-  "repository": "ahmedHusseinF/cmpn-202-back",
+  "repository": "ahmedHusseinF/cmpn-202",
   "license": "MIT"
 }

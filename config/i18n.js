@@ -7,9 +7,11 @@
  *
  * @see http://trailsjs.io/doc/config/i18n
  */
-const en = require('./locales/en.json');
+
+'use strict'
 
 module.exports = {
+
   /**
    * The default locale
    */
@@ -19,6 +21,7 @@ module.exports = {
    * The path to the locales
    */
   resources: {
-    en,
-  },
-};
+    en: require('./locales/en.json')
+  }
+
+}

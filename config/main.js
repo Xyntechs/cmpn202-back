@@ -5,9 +5,12 @@
  * @see http://trailsjs.io/doc/config/main
  */
 
-const path = require('path');
+'use strict'
+
+const path = require('path')
 
 module.exports = {
+
   /**
    * Order does *not* matter. Each module is loaded according to its own
    * requirements.
@@ -16,6 +19,7 @@ module.exports = {
     require('trailpack-repl'),
     require('trailpack-router'),
     require('trailpack-express'),
+    // require('trailpack-waterline')
   ],
 
   /**
@@ -23,6 +27,6 @@ module.exports = {
    */
   paths: {
     root: path.resolve(__dirname, '..'),
-    temp: path.resolve(__dirname, '..', '.tmp'),
-  },
-};
+    temp: path.resolve(__dirname, '..', '.tmp')
+  }
+}
